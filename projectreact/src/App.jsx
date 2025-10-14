@@ -1,6 +1,7 @@
 import { Link, Route, Routes } from "react-router-dom"
 import Contact from "./components/Contact"
 import Navbar from "./components/Navbar"
+import Regsiter from "./components/Register"
 
 
 
@@ -29,7 +30,8 @@ const  App = ()=> {
 
      <Routes>
        <Route path="/navbar" element={<Navbar />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path="/contact" element={<Contact   />} />
+      <Route path="/register" element={<Regsiter   />} />
     </Routes>
  
     {/* <Navbar  datas={obj}     />

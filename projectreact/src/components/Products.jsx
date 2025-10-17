@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Navbar from "./Navbar";
 
 const Products = ()=>{
 
@@ -7,6 +8,7 @@ const [searchpannuradata,setSearchPannuradata] = useState("")
 const [categories,setCategories]  = useState([]);
 const [catvalue,setCatValue] = useState("")
 const [sortprice, setPrice] = useState("")
+const [cart,setCart] = useState(0);
 
 
 
@@ -91,7 +93,20 @@ const lowtohigh = [{name:"Price:High-Low"},{name:"Price:Low-High"}]
         
     }
 
+
+
+    const addtocart = ()=>{
+
+      setCart(cart+1)
+
+
+    }
+
     return <>
+
+    <div>
+      <Navbar cartcvalue={cart} />
+    </div>
     
     <div className="bg-blue-500 h-500">
         <h1 className="text-center p-10 text-2xl">Product List</h1>
@@ -131,7 +146,7 @@ const lowtohigh = [{name:"Price:High-Low"},{name:"Price:Low-High"}]
              <h1>{e.title.length>10?e.title.slice(0,10)+"...":e.title}</h1>
              {e.description.length > 20 ? e.description.slice(0, 30) + "..." : e.description}
              <p className="bg-blue-500 w-20 text-center p-1 m-1 rounded text-white">{e.price}</p>
-             <button className="bg-black text-white p-2 w-50 rounded hover:bg-blue-500 hover:text-black">Add to cart</button>
+             <button onClick={addtocart} className="bg-black text-white p-2 w-50 rounded hover:bg-blue-500 hover:text-black">Add to cart</button>
            </div>
 
 

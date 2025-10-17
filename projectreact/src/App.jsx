@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar"
 import Regsiter from "./components/Register"
 
 import Products from "./components/Products"
+import Design from "./components/Design"
 
 
 
@@ -35,6 +36,7 @@ const  App = ()=> {
       <Route path="/contact" element={<Contact   />} />
       <Route path="/register" element={<Regsiter   />} />
        <Route path="/product" element={<Products   />} />
+       <Route path="/" element={<Design   />} />
     </Routes>
  
     {/* <Navbar  datas={obj}     />

@@ -1,19 +1,16 @@
 import { Link } from "react-router-dom";
 
 
-const Navbar = ()=>{
+const Navbar = ({cartcvalue})=>{
 
 
      
 
     return <>
 
-     <div>
-        <Link to="/contact">Contact</Link>
-    
-
+     <div className="bg-white p-5 fixed w-full">
+         <span>Cart : {cartcvalue}</span> 
      
-
      </div>
 
     </>

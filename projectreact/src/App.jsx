@@ -5,6 +5,7 @@ import Regsiter from "./components/Register"
 
 import Products from "./components/Products"
 import Design from "./components/Design"
+import RefIntro from "./components/RefIntro"
 
 
 
@@ -36,7 +37,9 @@ const  App = ()=> {
       <Route path="/contact" element={<Contact   />} />
       <Route path="/register" element={<Regsiter   />} />
        <Route path="/product" element={<Products   />} />
-       <Route path="/" element={<Design   />} />
+       <Route path="/design" element={<Design   />} />
+
+        <Route path="/" element={<RefIntro   />} />
     </Routes>
  
     {/* <Navbar  datas={obj}     />

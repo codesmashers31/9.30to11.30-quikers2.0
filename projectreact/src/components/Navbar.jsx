@@ -1,15 +1,17 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../context/AuthContext";
 
 
-const Navbar = ({cartcvalue})=>{
+const Navbar = ()=>{
 
-
+const {values} = useContext(AuthContext)
      
 
     return <>
 
      <div className="bg-white p-5 fixed w-full">
-         <span>Cart : {cartcvalue}</span> 
+         <span>Cart : {values}</span> 
      
      </div>
 

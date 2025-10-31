@@ -5,7 +5,10 @@ import Regsiter from "./components/Register"
 
 import Products from "./components/Products"
 import Design from "./components/Design"
-import RefIntro from "./components/RefIntro"
+
+import EasyAutoGrowInput from "./components/EasyAutoGrowInput"
+
+
 
 
 
@@ -14,10 +17,9 @@ const  App = ()=> {
 
   // const navigate = useNavigate();
   
-  // const obj = {
-  //   name:"React",
-  //   newclass:"Node"
-  // }
+  
+
+  
 
 
   // const movetocontact = ()=>{
@@ -32,16 +34,37 @@ const  App = ()=> {
 
    {/* <Navbar/> */}
 
-     <Routes>
+     {/* <Routes>
        <Route path="/navbar" element={<Navbar />} />
       <Route path="/contact" element={<Contact   />} />
       <Route path="/register" element={<Regsiter   />} />
        <Route path="/product" element={<Products   />} />
        <Route path="/design" element={<Design   />} />
 
-        <Route path="/" element={<RefIntro   />} />
+        <Route path="/" element={<EasyAutoGrowInput   />} />
+      
+    </Routes> */}
+
+      
+           <Routes>
+       <Route path="/navbar" element={<Navbar />} />
+      <Route path="/contact" element={<Contact   />} />
+      <Route path="/register" element={<Regsiter   />} />
+       <Route path="/product" element={<Products   />} />
+       <Route path="/design" element={<Design   />} />
+
+        <Route path="/" element={<EasyAutoGrowInput   />} />
+      
     </Routes>
- 
+
+
+   <Navbar/>
+  
+
+
+
+
+
     {/* <Navbar  datas={obj}     />
 
      <Contact  datanew={obj}   /> */}

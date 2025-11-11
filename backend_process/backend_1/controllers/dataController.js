@@ -1,7 +1,7 @@
 
 export  const userController = (req,res)=>{
 console.log(req.body);
-const {name,subject} = req.body
+const {name,email,age} = req.body
 
 
 try {
@@ -10,9 +10,13 @@ if(name==="React"){
       res.status(200).json({message:"Succfully done",datas:name})
 }
 
-if(subject==="react"){
-      res.status(200).json({message:"Succfully done",datas:subject})
-}else{
+if(email==="react@gmail.com"){
+      res.status(200).json({message:"Succfully done",datas:email})
+}
+if(age>"18"){
+      res.status(200).json({message:"Permission DOne",datas:age})
+}
+else{
        res.status(404).json({message:"Data is not correct"})
 }
 
@@ -32,6 +36,8 @@ export const dataController = (req,res)=>{
 
             res.status(200).json({message:`Reveice you id ${user_id}`})
 
+      }else{
+            res.status(400).json({message:`Not posibale`})
       }
 
       

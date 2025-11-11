@@ -1,0 +1,63 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    
+<h1 id="data">10</h1>
+<button onclick="data()">Click to update</button>
+
+
+
+<table>
+    <thead>
+        <th>User ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>action</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>React</td>
+            <td>rect@gamil.com</td>
+            <td><button onclick="datasend(1)">Edit</button> | 
+            <button>Edit</button></td>
+        </tr>
+    </tbody>
+</table>
+
+
+    <script>
+
+ 
+    const datas = document.getElementById("data")
+    const data = ()=>{
+
+     var a = 10 
+
+      a++
+    
+     datas.innerText = a
+     
+   
+
+    }   
+
+       const datasend = (id)=>{
+
+        alert(id)
+
+        fetch(`http://localhost:3000/api/data/datas/?data="new",, fromdatas)
+        // http://localhost:3000/api/data/datas/1
+
+     }
+</script>
+</body>
+</html>
+

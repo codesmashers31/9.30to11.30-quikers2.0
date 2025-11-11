@@ -4,9 +4,12 @@ import dotenv from 'dotenv'
 import cors from 'cors'
 
 import dataRoutes from './routes/dataRoutes.js'
+import connectDB from './config/db.js'
 
 dotenv.config()
 
+
+connectDB()
 
 const app = express()
 
@@ -31,3 +34,11 @@ app.listen(PORT,()=>{
 // /user/100
 
 // re=30
+
+
+// Mongo details
+// codetalk24x7_db_user
+// 2r2wJYGk1YGAejMn
+
+
+// mongodb+srv://codetalk24x7_db_user:2r2wJYGk1YGAejMn@cluster0.ezfpkn6.mongodb.net/?appName=Cluster0

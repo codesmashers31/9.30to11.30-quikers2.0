@@ -1,6 +1,6 @@
 
 export  const userController = (req,res)=>{
-console.log(req.body);
+//console.log(req.body);
 const {name,email,age} = req.body
 
 

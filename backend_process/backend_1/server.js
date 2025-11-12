@@ -5,6 +5,7 @@ import cors from 'cors'
 
 import dataRoutes from './routes/dataRoutes.js'
 import connectDB from './config/db.js'
+import teaRoutes from './routes/teaRoutes.js'
 
 dotenv.config()
 
@@ -21,6 +22,7 @@ app.use(cors())
 app.use(express.json())
 
 app.use("/api/data",dataRoutes)
+app.use("/api/tea",teaRoutes)
 
 
 app.listen(PORT,()=>{
@@ -42,3 +44,7 @@ app.listen(PORT,()=>{
 
 
 // mongodb+srv://codetalk24x7_db_user:2r2wJYGk1YGAejMn@cluster0.ezfpkn6.mongodb.net/?appName=Cluster0
+
+
+// http://localhost:3000/api/tea
+

@@ -30,6 +30,22 @@ const App = () => {
 
        setDatas(chennaiRoutesRes.data.dataadding)
 
+//  const res = await fetch("http://localhost:3000/api/chennai/bus", {
+//   method: "POST",
+//   headers: {
+//     "Content-Type": "application/json",
+//   },
+//   body: JSON.stringify(routes),
+// });
+
+// const data = await res.json();
+// console.log(data);
+
+// alert(data.msg)
+
+
+
+
 
   }
   
